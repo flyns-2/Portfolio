@@ -1,0 +1,27 @@
+Read Me :
+Voici l'organisation de mon portfolio :
+dossier page = contient tous mes fichiers html
+dossier css = contient tous mes fichiers css
+dossier image = contient toutes images
+dossier script = contient tous mes scripts js
+index = est ma page principale
+
+
+Attention : le css n'est pas toujours présent sur toutes les pages (nottament sur certains projets) ou même très élaboré je le travaille toujours actuellement et certains visuel respecte les demandes du cours 
+
+Voici un fichier qui va récapitule l'ensemble de mes fonctions pour vous faciliter la correction :
+
+Script about-Me.js associé à la page about-me.html : 
+Permet de changer l'image et le noms de la ville que moi et mes camarades déconseillons (montpellier inclut ) ainsi qu'un slider d'une liste d'album que je conseille 
+
+competences.js :
+barre de recherche vis a vis à de potentiel compétences 
+lié a la page competences.html
+
+connexions.js :
+page de connexion l'osature html et css reprend l'osature de l'exercice fait en classe lié à la page connexions.html le mdp et login pour se connecter sont dans la page js
+Normalement ca devrait être la première page (je parle de connexion.js) avant l'index mais flemme de tout réorganiser la page inde.html et ses liens
+
+index.js : 
+lié à la page index.html
+On y trouvera la plus part des évent click et de souris de la question mais aussi à la redirection des pages de l'header

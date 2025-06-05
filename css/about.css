@@ -1,0 +1,56 @@
+:root {
+    --primary: #ff3caa;
+    --secondary: #3cfaff;
+    --background: #1b1b3a;
+    --card-bg: #f222ff;
+    --highlight: #ffb86c;
+    --white: #f8f8f8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    color: var(--primary);
+}
+
+
+h2{
+    color: var(--secondary);
+}
+
+#test{
+    color: var(--highlight);
+}
+
+a{
+    color: var(--highlight);
+}
+
+#tableau, th, td{
+    border: 1px solid var(--card-bg);
+    
+}
+
+@media (max-width: 600px) {
+    #slider {
+        flex-direction: column;
+        max-width: 90%;
+        padding: 20px 10px;
+    }
+
+    .image-container {
+        max-width: 90vw;
+    }
+
+    #precedent,
+    #suivant {
+        font-size: 36px;
+        padding: 8px;
+    }
+}

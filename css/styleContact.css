@@ -1,0 +1,178 @@
+:root {
+    --primary: #ff3caa;
+    --secondary: #3cfaff;
+    --background: #1b1b3a;
+    --card-bg: #f222ff;
+    --highlight: #ffb86c;
+    --white: #f8f8f8;
+    --almala : 	#f88ff1;
+}
+
+body{
+    background-color: var(--background);
+}
+img{
+    width: 150px;
+    height: 85px;
+    border-bottom: solid whitesmoke;
+    align-items: baselines;
+
+}
+
+.haut :hover{
+    font-size: larger; 
+    color: var(--secondary)		;
+    
+}
+
+.header{
+    background-color: var(--color-secondary);
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: repeat(1,1fr);
+    margin-top: 2%;
+    border-bottom: 2px  var(--card-bg) solid;
+    
+}
+
+.haut{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: start;
+
+}
+
+
+.resume{
+    background-color: var(--color-text);
+    border-top: 3px var(--card-bg);
+    border-bottom: 3px  var(--card-bg);
+    display: grid;
+    place-items: center;
+    margin-bottom: 10%;
+}
+
+#mscontact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+    border-bottom: 3px var(--card-bg) solid;
+        margin-top: -10%;
+    background-color: var(--fondSecondaire);
+}
+
+#contact{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+
+}
+
+#son{
+    display: grid;
+    grid-area: 0 / 2 / 1/ 13;
+    justify-items: center;
+    grid-row-gap: 10px;
+
+}
+
+
+.contactclasse{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    margin-bottom: 0.3%;
+    background-color: var(--fondPrincipale);
+}
+
+
+#monNum{
+    display: grid;
+    align-items: end;
+}
+#num{
+    display: grid;
+    align-items: start;
+}
+
+
+#monMail{
+    display: grid;
+    align-items: end;
+
+}
+#mail{
+    display: grid;
+    align-items: start;
+}
+
+#monAd{
+    display: grid;
+    justify-items: end;
+}
+#adresse{
+    display: grid;
+    align-items: start;
+}
+
+
+
+.lettre{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    border-bottom: 3px var(--card-bg) solid;
+    background-color: var(--fondSecondaire);
+}
+
+#client{
+    display: grid;
+    justify-items: start;
+    justify-content: center;
+}
+
+#avis{
+    display: grid;
+    grid-area: 2 / 2/ 2 / 2;
+    justify-items: start;
+    justify-content: center;
+    grid-row-gap: 10px;
+    align-items: center;
+}
+
+#news{
+    justify-items: center;
+}
+
+
+.map{
+    display:grid; 
+    justify-content: center;
+    margin-bottom: 2%;
+    background-color: var(--fondPrincipale);
+}
+
+
+.bas{
+    display: grid;
+    justify-content: center;
+    margin-bottom:5%;
+    border-bottom: 3px var(--card-bg);
+    border-top: 3px  var(--card-bg);
+    background-color: var(--primary);
+}
+p{
+    color:var(--almala);   
+}
+label, button{
+    color: var(--highlight);
+}
+.tim{
+    margin-left: 15%;
+}
+#tim{
+    margin-left: 1000%;
+}

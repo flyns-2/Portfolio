@@ -1,0 +1,40 @@
+/* Je n'ai pas utilisé la propriété box-shadow car je n'ai pas trouvé son utilité*/
+
+div {
+    border: solid gray;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+p {
+    font-family: serif;
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+#titre {
+    color: darkslategray;
+    width: 40%;
+    border-bottom: 0.5px solid grey;
+}
+
+a {
+    color: brown;
+}
+
+li {
+    font-family: serif;
+}
+
+#slide{
+    width : 600px;
+    height: 400px;
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+    <meta name ="viewport" content ="width=device-width", initial-scale=" 1.0">
+    <meta  http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="description" content="Mon portfolio">
+    <meta name = "keywords" content ="Portfolio, web dev, projects">
+    <meta name ="Julien" content = "Beugnet">
+  
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body  id="corp">
+
+    <div title="Présentation"></div>
+    <h1 id="titre"> Présentation Julien Beugnet </h1>
+     <h2 id="titre">A Propos de Moi :</h2>
+        <p> 
+            Je m'appelle julien Beugnet, je suis né à Lille en févirer 2002. En 2020 j'ai obtenu mon Bac ES, puis je suis partis en Licence Math Info.
+            J'ai redoublé de peu la 1ère année puis au cours de l'été entre les deux années j'ai commencé à travailler comme plongeur
+            /commis de cuisine. Au cours de ma 2nde année j'ai arrété d'aller en cours pour travailler à plein temps.
+            Après 1 ans et demis de travail, j'ai décidé de reprendre les cours mais en informatique pur via l'IPSSI où j'ai fait ma rentré
+            en septembre 20224 tout en continuant de travailler en restauration.
+             
+            <div title="Loisir"> 
+                <h2 id="titre">Loisir</h3>
+            <div class="loisir">   
+            <ul>
+                <li>Depuis peu j'apprend le skate sur mon temps libre</li>
+                <li> J'ai fait 6 ans d'escalade, 2 ans d'atléthisme, 1 ans de foot</li>
+                <li> Je Joue beaucoup trop au jeux vidéos </li>
+                <li> Depuis 8 ans je regarde du basket principalement la nba (fan des warriors) et j'en fait 6 ans sur des terrains exterieurs</li>
+                <li> Même si je suis pas un fan absolu de foot, je regarde des matchs et écoute des émissions qui en parle, depuis 2010 et mon premier 
+                     et la finale de ldc je suis fan du Bayern.</li>
+                <li> Mes réalisateurs préféres sont Micheal Mann pour notamment Collatéral,Heat et le Dernier des Mohicans ainsi que David Fyncher pour
+                    Seven, The Social Network principalement
+                </li>
+            </ul>
+           </div>
+            </div>
+
+            <h2>Skate </h2>
+                <p>Depuis 2024 je me suis mis au skate a la base pour me promener puis récemment j'ai commencé à en faire de manière sérieuse et régulière
+                    à en faire mais du côté freestyle notamment grâce au Rodnney Mullen et ses tricks qui m'ont tomber dans le skate.
+                    Aller voir ses compilations (notamment :<a href="https://www.youtube.com/watch?v=NgJrSUqKUEE"> celle ci </a> )
+                </p>
+            
+            
+        </p>
+
+
+            <h2> Album de musique conseillé : </h2>
+        <div class="album" id="album">
+        
+            <table id="tableau">     
+                <tr>    
+                  <td> <p id="albumSlide"> plus  </p> </td>  
+        
+                </tr>
+                <tr>    
+                    <td> <p id="description"> moins</p>   </td>
+                </tr>
+            </table>
+                    <div id="precedent" onclick="changeSlideAlbum(-1)"> </div>
+                    <div id="suivant" onclick="changeSlideAlbum(1)"> > </div>
+                
+            
+        </div>       
+        
+        <div title="compétences">
+            <h2 id="titre"> Compétences</h2>
+            <ol>
+                <li>Organisation</li>
+                <li>Rapide</li>
+                <li>Travailleur</li>
+                <li>Consciencieux</li>
+            </ol>
+        </div>
+
+        <div title="Projet et expériences"> </div>
+        <h2> Expériences</h2>
+            <ol>
+                <li> 1 ans d'itérim (commis au Grand Stade de Lille)</li>
+                <li> 2 ans les cuisines des Péniches archimède et Aristote </li>
+                <li> 8 mois dans la cuisine du Babe </li>
+            </ol>
+        <h2> Projets futur </h2>
+        <p>J'aimerais travailler dans le developpement de jeu vidéo dans les prochaines années. Sinon me former pour continuer à travailler
+            dans la restauration et travailler dans un pays étranger.
+        </p>
+    
+
+        <h2>Ville que  déconseille</h2>   
+        <div id="slider">
+            <p id="test"> Mtp</p>
+            <img src="../image/carteAgglo-communes.jpg" alt="montpellier" id="slide">
+            <button id="precedent" onclick="ChangeSlide(-1)">precedent</button>
+            <button id="suivant" onclick="ChangeSlide(1)" > suivant</button>
+        </div>
+        
+     
+         </select>  
+    <p> Je ne donnerai aucune info sur mes contacts</p>
+       
+    <script src="../script/aboutMe.js"></script>
+  
+</body>
+
+
+</html>

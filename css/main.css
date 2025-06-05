@@ -1,0 +1,302 @@
+/* Couleur */
+:root {
+    --color-bg: #0f0c29;
+    --color-text: #e0b3ff;
+    --color-accent: #ff2fc2;
+    --color-secondary: #00ffe7;
+    --color-border: #8e44ad;
+    --color-progress: #ffe600;
+    --color-hover: #009ffd;
+    --transition-speed: 0.3s;
+}
+
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition-speed);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.lien {
+    font-size: 1.8rem;
+    color: var(--color-accent);
+ 
+}
+
+.lien:hover {
+    color: var(--color-hover);
+    font-size: 2.2rem;
+}
+
+h6 {
+    font-size: larger;
+}
+
+/* Header */
+.titreP {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.gauche {
+    color: var(--color-secondary);
+}
+
+/* Ajout Projets */
+.Projet {
+    margin-top: 2%;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid var(--color-border);
+}
+
+.LesProjets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 70px;
+    margin-top: -15px;
+}
+
+.LesProjets a {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: transform var(--transition-speed);
+}
+
+.LesProjets a:hover {
+    transform: scale(1.05);
+}
+
+.pj1 {
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-speed);
+}
+
+.pj1:hover {
+    background-color: var(--color-hover);
+    color: var(--color-progress);
+    transform: scale(1.05);
+}
+
+.pj1 img:hover {
+    transform: scale(1.1);
+}
+
+/* Partie compétences */
+#compe {
+    display: flex;
+ 
+    justify-content: center;
+    align-items: baseline;
+    border-bottom: 5px solid var(--color-border);
+    font-size: larger;
+}
+
+.Competences {
+    margin-bottom: 2%;
+
+}
+
+.lang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 46px;
+    border-bottom: 5px solid var(--color-border);
+}
+
+.progressbar {
+    background-color: #1c1c3c;
+    color: orange;
+    border-radius: 15px;
+    width: 25%;
+    padding: 0.5rem;
+}
+
+.progressbar[title="html"] {
+    background-color: var(--color-secondary);
+}
+
+.progressbar[title="combien"] {
+    background-color: var(--color-progress);
+}
+
+/* Annomation */
+@keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    animation: float 3s ease-in-out infinite;
+    opacity: 0.7;
+}
+
+/* Profil*/
+#nom {
+    border: 5px solid var(--color-border);
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+/* Boutons */
+button,
+.load {
+    margin-top: 15px;
+    background-color: transparent;
+    color: var(--color-text);
+    border: 2px solid var(--color-border);
+    padding: 0.5rem 1rem;
+    transition: background-color , color var(--transition-speed);
+}
+
+.load:hover,
+button:hover {
+    background-color: var(--color-hover);
+    color: black;
+}
+
+/* footer */
+footer,
+.rs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0 15px;
+    align-items: baseline;
+}
+
+.linkedin {
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotating{
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+.linkedin:hover {
+    filter: brightness(1.75);
+    animation: rotating 2s linear infinite;
+}
+
+/*Contact*/
+.contact {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    border: 5px solid var(--color-border);
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+#contact,
+#son {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Pour téléphone */
+@media (max-width: 768px) {
+
+    .d-flex,
+    .center,
+    .contact,
+    .LesProjets,
+    #nom {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .LesProjets {
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .pj1 {
+        width: 90%;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    .lang {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .linkedin {
+        width: 80px;
+        height: 40px;
+    }
+
+    .p {
+        font-size: 1.4rem;
+    }
+
+    .progressbar {
+        width: 80%;
+    }
+
+    button,
+    .load {
+        width: 80%;
+    }
+
+    footer,
+    .rs {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+

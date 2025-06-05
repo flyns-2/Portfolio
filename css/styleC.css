@@ -1,0 +1,11 @@
+.cookie{
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+}
+.coca{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
